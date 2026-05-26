@@ -1,85 +1,161 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- MOBILE RESPONSIVE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Amba Electrical Services</title>
 
+    <!-- CSS FILE -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <div class="logo">Amba Electrical Services</div>
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Amba Electrical Services</div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Reliable & Professional Electrical Services</h1>
+    <!-- HERO SECTION -->
+    <section class="hero">
 
-    <p>⚡ Powering homes, industries & smart systems with professional electrical solutions.</p>
+        <h1>Reliable & Professional Electrical Services</h1>
 
-    <a class="btn" href="#contact">Contact Me</a>
-</section>
+        <p>
+            ⚡ Powering homes, industries & smart systems with
+            professional electrical solutions.
+        </p>
 
-<!-- SERVICES -->
-<section class="services">
-    <h2>Our Services</h2>
+        <a class="btn" href="#contact">Contact Me</a>
 
-    <div class="service-box">
-        <div><i class="fas fa-house"></i> House Wiring</div>
-        <div><i class="fas fa-industry"></i> Industrial Installation</div>
-        <div><i class="fas fa-gears"></i> Motor Control</div>
-        <div><i class="fas fa-solar-panel"></i> Solar Installation</div>
-    </div>
-</section>
+    </section>
 
-<!-- PROJECTS -->
-<section class="projects">
-    <h2>Our Projects</h2>
+    <!-- SERVICES -->
+    <section class="services" id="services">
 
-    <div class="project-grid">
-        <div class="project">House Wiring</div>
-        <div class="project">Control Panel Setup</div>
-        <div class="project">Motor Installation</div>
-        <div class="project">Solar System</div>
-    </div>
-</section>
+        <h2>Our Services</h2>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-    <h2>Contact Us</h2>
+        <div class="service-box">
 
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
+            <div>
+                <i class="fas fa-house"></i>
+                House Wiring
+            </div>
 
-    <p>Phone: +1 000 000 000</p>
-    <p>Email: ambaelectric@example.com</p>
-</section>
+            <div>
+                <i class="fas fa-industry"></i>
+                Industrial Installation
+            </div>
 
-<!-- WHATSAPP BUTTON -->
-<a class="whatsapp" href="https://wa.me/251900000000" target="_blank">
-    WhatsApp Chat
-</a>
+            <div>
+                <i class="fas fa-gears"></i>
+                Motor Control Systems
+            </div>
+
+            <div>
+                <i class="fas fa-solar-panel"></i>
+                Solar Installation
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+
+        <h2>Our Projects</h2>
+
+        <div class="project-grid">
+
+            <div class="project">
+                House Wiring
+            </div>
+
+            <div class="project">
+                Control Panel Setup
+            </div>
+
+            <div class="project">
+                Motor Installation
+            </div>
+
+            <div class="project">
+                Solar System
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <!-- CONTACT FORM -->
+        <form class="contact-form"
+            action="https://formsubmit.co/Samuel094555@gmail.com"
+            method="POST">
+
+            <!-- HIDDEN SETTINGS -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="hidden"
+                name="_next"
+                value="https://sam12-3.github.io/amba-electrical-services/">
+
+            <!-- INPUTS -->
+            <input type="text"
+                name="name"
+                placeholder="Your Name"
+                required>
+
+            <input type="email"
+                name="email"
+                placeholder="Your Email"
+                required>
+
+            <textarea name="message"
+                placeholder="Your Message"
+                required></textarea>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+        <p>Phone: +1 000 000 000</p>
+
+        <p>Email: Samuel094555@gmail.com</p>
+
+    </section>
+
+    <!-- WHATSAPP BUTTON -->
+    <a class="whatsapp"
+        href="https://wa.me/251900000000"
+        target="_blank">
+
+        WhatsApp Chat
+
+    </a>
 
 </body>
+
 </html>
