@@ -1,9 +1,11 @@
 /* SMOOTH SCROLL */
+
 html {
     scroll-behavior: smooth;
 }
 
 /* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,14 +13,20 @@ html {
 }
 
 /* BODY */
+
 body {
+
     font-family: Arial, sans-serif;
+
     background: #0b1d39;
+
     color: white;
+
     overflow-x: hidden;
 }
 
 /* BACKGROUND */
+
 .background-animation {
 
     position: fixed;
@@ -28,13 +36,18 @@ body {
     height: 100%;
 
     background:
-        radial-gradient(circle at top left,
-            rgba(0, 191, 255, 0.15),
-            transparent),
 
-        radial-gradient(circle at bottom right,
+        radial-gradient(
+            circle at top left,
+            rgba(0, 191, 255, 0.15),
+            transparent
+        ),
+
+        radial-gradient(
+            circle at bottom right,
             rgba(0, 191, 255, 0.1),
-            transparent);
+            transparent
+        );
 
     z-index: -1;
 
@@ -43,6 +56,7 @@ body {
 }
 
 /* BACKGROUND ANIMATION */
+
 @keyframes moveBackground {
 
     from {
@@ -55,6 +69,7 @@ body {
 }
 
 /* HEADER */
+
 header {
 
     display: flex;
@@ -77,6 +92,7 @@ header {
 }
 
 /* LOGO */
+
 .logo {
 
     color: #00bfff;
@@ -91,6 +107,7 @@ header {
 }
 
 /* NAVIGATION */
+
 nav a {
 
     color: white;
@@ -110,6 +127,7 @@ nav a:hover {
 }
 
 /* HERO */
+
 .hero {
 
     text-align: center;
@@ -120,6 +138,7 @@ nav a:hover {
 }
 
 /* HERO TITLE */
+
 .hero h1 {
 
     font-size: 52px;
@@ -133,10 +152,12 @@ nav a:hover {
         0 0 20px #00bfff,
         0 0 40px #00bfff;
 
-    animation: glow 2s infinite alternate;
+    animation:
+        glow 2s infinite alternate;
 }
 
 /* HERO TEXT */
+
 .hero p {
 
     max-width: 700px;
@@ -150,21 +171,27 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* HERO ANIMATION */
+/* FADE ANIMATION */
+
 @keyframes fadeIn {
 
     from {
+
         opacity: 0;
+
         transform: translateY(30px);
     }
 
     to {
+
         opacity: 1;
+
         transform: translateY(0);
     }
 }
 
 /* GLOW EFFECT */
+
 @keyframes glow {
 
     from {
@@ -184,6 +211,7 @@ nav a:hover {
 }
 
 /* BUTTON */
+
 .btn {
 
     display: inline-block;
@@ -216,6 +244,7 @@ nav a:hover {
 }
 
 /* SERVICES */
+
 .services {
 
     text-align: center;
@@ -231,6 +260,7 @@ nav a:hover {
 }
 
 /* SERVICE GRID */
+
 .service-box {
 
     display: grid;
@@ -243,6 +273,7 @@ nav a:hover {
 }
 
 /* SERVICE CARD */
+
 .service-box div {
 
     background: #102a52;
@@ -257,6 +288,7 @@ nav a:hover {
 }
 
 /* SERVICE HOVER */
+
 .service-box div:hover {
 
     transform: translateY(-10px);
@@ -266,6 +298,7 @@ nav a:hover {
 }
 
 /* SERVICE ICON */
+
 .service-box i {
 
     font-size: 38px;
@@ -276,6 +309,7 @@ nav a:hover {
 }
 
 /* PROJECTS */
+
 .projects {
 
     padding: 80px 20px;
@@ -291,6 +325,7 @@ nav a:hover {
 }
 
 /* PROJECT GRID */
+
 .project-grid {
 
     display: grid;
@@ -303,6 +338,7 @@ nav a:hover {
 }
 
 /* PROJECT CARD */
+
 .project {
 
     background: #102a52;
@@ -315,6 +351,7 @@ nav a:hover {
 }
 
 /* PROJECT HOVER */
+
 .project:hover {
 
     transform: scale(1.03);
@@ -324,6 +361,7 @@ nav a:hover {
 }
 
 /* PROJECT IMAGE */
+
 .project img {
 
     width: 100%;
@@ -334,12 +372,14 @@ nav a:hover {
 }
 
 /* PROJECT TITLE */
+
 .project h3 {
 
     padding: 15px;
 }
 
 /* CONTACT */
+
 .contact {
 
     text-align: center;
@@ -348,6 +388,7 @@ nav a:hover {
 }
 
 /* FORM */
+
 .contact-form {
 
     display: flex;
@@ -362,6 +403,7 @@ nav a:hover {
 }
 
 /* INPUTS */
+
 .contact-form input,
 .contact-form textarea {
 
@@ -375,6 +417,7 @@ nav a:hover {
 }
 
 /* TEXTAREA */
+
 .contact-form textarea {
 
     height: 140px;
@@ -383,6 +426,7 @@ nav a:hover {
 }
 
 /* BUTTON */
+
 .contact-form button {
 
     padding: 15px;
@@ -410,6 +454,7 @@ nav a:hover {
 }
 
 /* WHATSAPP */
+
 .whatsapp {
 
     position: fixed;
@@ -441,13 +486,138 @@ nav a:hover {
     transition: 0.3s;
 }
 
-/* WHATSAPP HOVER */
 .whatsapp:hover {
 
     transform: scale(1.1);
 }
 
+/* FOOTER */
+
+.footer {
+
+    background: #07152b;
+
+    margin-top: 60px;
+
+    padding-top: 50px;
+}
+
+/* FOOTER CONTAINER */
+
+.footer-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit,
+        minmax(250px, 1fr));
+
+    gap: 30px;
+
+    padding:
+        0 40px 40px;
+}
+
+/* FOOTER HEADINGS */
+
+.footer-box h2,
+.footer-box h3 {
+
+    color: #00bfff;
+
+    margin-bottom: 15px;
+}
+
+/* FOOTER TEXT */
+
+.footer-box p {
+
+    color: #d6d6d6;
+
+    line-height: 1.7;
+}
+
+/* FOOTER LINKS */
+
+.footer-box a {
+
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-bottom: 10px;
+
+    transition: 0.3s;
+}
+
+.footer-box a:hover {
+
+    color: #00bfff;
+
+    transform: translateX(5px);
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+.social-icons a {
+
+    width: 45px;
+
+    height: 45px;
+
+    background: #102a52;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 20px;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+
+    background: #00bfff;
+
+    transform: scale(1.1);
+}
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.1);
+
+    color: #aaa;
+
+    font-size: 14px;
+}
+
 /* REVEAL ANIMATION */
+
 .reveal {
 
     position: relative;
@@ -467,6 +637,7 @@ nav a:hover {
 }
 
 /* RESPONSIVE */
+
 @media (max-width: 768px) {
 
     header {
