@@ -18,11 +18,15 @@ body {
     overflow-x: hidden;
 }
 
-/* ANIMATED BACKGROUND */
+/* BACKGROUND */
 .background-animation {
+
     position: fixed;
+
     width: 100%;
+
     height: 100%;
+
     background:
         radial-gradient(circle at top left,
             rgba(0, 191, 255, 0.15),
@@ -33,7 +37,9 @@ body {
             transparent);
 
     z-index: -1;
-    animation: moveBackground 8s infinite alternate;
+
+    animation:
+        moveBackground 8s infinite alternate;
 }
 
 /* BACKGROUND ANIMATION */
@@ -50,57 +56,97 @@ body {
 
 /* HEADER */
 header {
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     padding: 20px 40px;
+
     background: rgba(0, 0, 0, 0.3);
+
     position: sticky;
+
     top: 0;
+
     backdrop-filter: blur(8px);
+
     z-index: 1000;
 }
 
 /* LOGO */
 .logo {
+
     color: #00bfff;
+
     font-size: 24px;
+
     font-weight: bold;
-    text-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
+
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 20px #00bfff;
 }
 
 /* NAVIGATION */
 nav a {
+
     color: white;
+
     text-decoration: none;
+
     margin-left: 20px;
+
     transition: 0.3s;
+
     font-weight: bold;
 }
 
 nav a:hover {
+
     color: #00bfff;
 }
 
 /* HERO */
 .hero {
+
     text-align: center;
+
     padding: 120px 20px;
+
     animation: fadeIn 2s ease;
 }
 
+/* HERO TITLE */
 .hero h1 {
+
     font-size: 52px;
+
     color: #00bfff;
+
     margin-bottom: 20px;
-    text-shadow: 0 0 20px rgba(0,191,255,0.6);
+
+    text-shadow:
+        0 0 10px #00bfff,
+        0 0 20px #00bfff,
+        0 0 40px #00bfff;
+
+    animation: glow 2s infinite alternate;
 }
 
+/* HERO TEXT */
 .hero p {
+
     max-width: 700px;
+
     margin: auto;
+
     line-height: 1.7;
+
     color: #d6d6d6;
+
     font-size: 18px;
 }
 
@@ -118,207 +164,337 @@ nav a:hover {
     }
 }
 
+/* GLOW EFFECT */
+@keyframes glow {
+
+    from {
+
+        text-shadow:
+            0 0 10px #00bfff,
+            0 0 20px #00bfff;
+    }
+
+    to {
+
+        text-shadow:
+            0 0 20px #00bfff,
+            0 0 40px #00bfff,
+            0 0 60px #00bfff;
+    }
+}
+
 /* BUTTON */
 .btn {
+
     display: inline-block;
+
     margin-top: 25px;
+
     padding: 14px 28px;
+
     background: #00bfff;
+
     color: white;
+
     text-decoration: none;
+
     border-radius: 8px;
+
     transition: 0.3s;
+
     font-weight: bold;
 }
 
 .btn:hover {
+
     background: #009acd;
+
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0,191,255,0.6);
+
+    box-shadow:
+        0 0 20px rgba(0,191,255,0.6);
 }
 
 /* SERVICES */
 .services {
+
     text-align: center;
+
     padding: 80px 20px;
 }
 
 .services h2 {
+
     margin-bottom: 35px;
+
     font-size: 36px;
 }
 
 /* SERVICE GRID */
 .service-box {
+
     display: grid;
-    grid-template-columns: repeat(auto-fit,
-            minmax(220px, 1fr));
+
+    grid-template-columns:
+        repeat(auto-fit,
+        minmax(220px, 1fr));
 
     gap: 20px;
 }
 
 /* SERVICE CARD */
 .service-box div {
+
     background: #102a52;
+
     padding: 35px 20px;
+
     border-radius: 12px;
+
     transition: 0.4s;
+
     cursor: pointer;
 }
 
 /* SERVICE HOVER */
 .service-box div:hover {
+
     transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(0,191,255,0.5);
+
+    box-shadow:
+        0 0 20px rgba(0,191,255,0.5);
 }
 
-/* ICONS */
+/* SERVICE ICON */
 .service-box i {
+
     font-size: 38px;
+
     color: #00bfff;
+
     margin-bottom: 15px;
 }
 
 /* PROJECTS */
 .projects {
+
     padding: 80px 20px;
+
     text-align: center;
 }
 
 .projects h2 {
+
     margin-bottom: 35px;
+
     font-size: 36px;
 }
 
 /* PROJECT GRID */
 .project-grid {
+
     display: grid;
-    grid-template-columns: repeat(auto-fit,
-            minmax(230px, 1fr));
+
+    grid-template-columns:
+        repeat(auto-fit,
+        minmax(230px, 1fr));
 
     gap: 20px;
 }
 
 /* PROJECT CARD */
 .project {
+
     background: #102a52;
+
     border-radius: 12px;
+
     overflow: hidden;
+
     transition: 0.4s;
 }
 
 /* PROJECT HOVER */
 .project:hover {
+
     transform: scale(1.03);
-    box-shadow: 0 0 20px rgba(0,191,255,0.5);
+
+    box-shadow:
+        0 0 20px rgba(0,191,255,0.5);
 }
 
 /* PROJECT IMAGE */
 .project img {
+
     width: 100%;
+
     height: 220px;
+
     object-fit: cover;
 }
 
 /* PROJECT TITLE */
 .project h3 {
+
     padding: 15px;
 }
 
 /* CONTACT */
 .contact {
+
     text-align: center;
+
     padding: 80px 20px;
 }
 
 /* FORM */
 .contact-form {
+
     display: flex;
+
     flex-direction: column;
+
     max-width: 500px;
+
     margin: auto;
+
     gap: 15px;
 }
 
 /* INPUTS */
 .contact-form input,
 .contact-form textarea {
+
     padding: 15px;
+
     border: none;
+
     border-radius: 8px;
+
     outline: none;
-    background: white;
 }
 
 /* TEXTAREA */
 .contact-form textarea {
+
     height: 140px;
+
     resize: none;
 }
 
 /* BUTTON */
 .contact-form button {
+
     padding: 15px;
+
     border: none;
+
     background: #00bfff;
+
     color: white;
+
     border-radius: 8px;
+
     cursor: pointer;
+
     transition: 0.3s;
+
     font-weight: bold;
 }
 
-/* BUTTON HOVER */
 .contact-form button:hover {
+
     background: #009acd;
+
     transform: scale(1.03);
 }
 
 /* WHATSAPP */
 .whatsapp {
+
     position: fixed;
+
     bottom: 20px;
+
     right: 20px;
+
     width: 60px;
+
     height: 60px;
+
     background: #25D366;
+
     border-radius: 50%;
+
     display: flex;
+
     justify-content: center;
+
     align-items: center;
+
     color: white;
+
     font-size: 30px;
+
     text-decoration: none;
+
     transition: 0.3s;
 }
 
 /* WHATSAPP HOVER */
 .whatsapp:hover {
+
     transform: scale(1.1);
+}
+
+/* REVEAL ANIMATION */
+.reveal {
+
+    position: relative;
+
+    transform: translateY(80px);
+
+    opacity: 0;
+
+    transition: all 1s ease;
+}
+
+.reveal.active {
+
+    transform: translateY(0);
+
+    opacity: 1;
 }
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
 
     header {
+
         flex-direction: column;
+
         text-align: center;
     }
 
     nav {
+
         margin-top: 10px;
     }
 
     nav a {
+
         display: inline-block;
+
         margin: 8px;
     }
 
     .hero h1 {
+
         font-size: 36px;
     }
 
     .hero p {
+
         font-size: 16px;
     }
 }

@@ -2,22 +2,26 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>Amba Electrical Services</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- ICONS -->
+    <!-- FONT AWESOME -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
 
-    <!-- ANIMATED BACKGROUND -->
+    <!-- BACKGROUND -->
     <div class="background-animation"></div>
 
     <!-- HEADER -->
@@ -28,10 +32,15 @@
         </div>
 
         <nav>
+
             <a href="#">Home</a>
+
             <a href="#services">Services</a>
+
             <a href="#projects">Projects</a>
+
             <a href="#contact">Contact</a>
+
         </nav>
 
     </header>
@@ -39,12 +48,14 @@
     <!-- HERO -->
     <section class="hero">
 
-        <h1>Professional Electrical Services</h1>
+        <h1>
+            Professional Electrical Services
+        </h1>
 
         <p>
             Reliable electrical installation,
-            maintenance, motor control systems
-            and solar installation services.
+            maintenance, motor control systems,
+            solar installation and industrial services.
         </p>
 
         <a href="#contact" class="btn">
@@ -54,7 +65,8 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="services" id="services">
+    <section class="services reveal"
+        id="services">
 
         <h2>Our Services</h2>
 
@@ -85,29 +97,38 @@
     </section>
 
     <!-- PROJECTS -->
-    <section class="projects" id="projects">
+    <section class="projects reveal"
+        id="projects">
 
         <h2>Our Projects</h2>
 
         <div class="project-grid">
 
             <div class="project">
-                <img src="house-wiring.jpg" alt="House Wiring">
+                <img src="house-wiring.jpg"
+                    alt="House Wiring">
+
                 <h3>House Wiring</h3>
             </div>
 
             <div class="project">
-                <img src="motor-control.jpg" alt="Motor Control">
+                <img src="motor-control.jpg"
+                    alt="Motor Control">
+
                 <h3>Motor Control System</h3>
             </div>
 
             <div class="project">
-                <img src="solar.jpg" alt="Solar Installation">
+                <img src="solar.jpg"
+                    alt="Solar Installation">
+
                 <h3>Solar Installation</h3>
             </div>
 
             <div class="project">
-                <img src="panel.jpg" alt="Electrical Panel">
+                <img src="panel.jpg"
+                    alt="Electrical Panel">
+
                 <h3>Electrical Panel</h3>
             </div>
 
@@ -116,12 +137,15 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact" id="contact">
+    <section class="contact reveal"
+        id="contact">
 
         <h2>Contact Us</h2>
 
         <form class="contact-form"
+
             action="https://formsubmit.co/Samuel094555@gmail.com"
+
             method="POST">
 
             <input type="hidden"
@@ -153,12 +177,45 @@
 
     <!-- WHATSAPP -->
     <a class="whatsapp"
+
         href="https://wa.me/251900000000"
+
         target="_blank">
 
         <i class="fab fa-whatsapp"></i>
 
     </a>
+
+    <!-- SCROLL REVEAL SCRIPT -->
+    <script>
+
+        window.addEventListener("scroll", reveal);
+
+        function reveal() {
+
+            let reveals = document.querySelectorAll(".reveal");
+
+            for (let i = 0; i < reveals.length; i++) {
+
+                let windowHeight = window.innerHeight;
+
+                let elementTop =
+                    reveals[i]
+                    .getBoundingClientRect().top;
+
+                let elementVisible = 100;
+
+                if (elementTop <
+                    windowHeight - elementVisible) {
+
+                    reveals[i]
+                        .classList
+                        .add("active");
+                }
+            }
+        }
+
+    </script>
 
 </body>
 
