@@ -171,7 +171,7 @@ nav a:hover {
     font-size: 18px;
 }
 
-/* FADE ANIMATION */
+/* HERO ANIMATION */
 
 @keyframes fadeIn {
 
@@ -287,8 +287,6 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* SERVICE HOVER */
-
 .service-box div:hover {
 
     transform: translateY(-10px);
@@ -349,8 +347,6 @@ nav a:hover {
 
     transition: 0.4s;
 }
-
-/* PROJECT HOVER */
 
 .project:hover {
 
@@ -425,7 +421,7 @@ nav a:hover {
     resize: none;
 }
 
-/* BUTTON */
+/* FORM BUTTON */
 
 .contact-form button {
 
